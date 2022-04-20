@@ -1,0 +1,13 @@
+server:
+  port: 8081 # 2개 이상의 MSA App 구동 위해 port 변경
+
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///msa
+    username: sa
+    password:
+
+logging:
+  level:
+    root: INFO
+    org.springframework.r2dbc: DEBUG
